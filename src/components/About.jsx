@@ -13,7 +13,7 @@ const About = () => {
 
         <div className='flex flex-col xl:flex-row items-center md:items-start md:gap-20 '>
 
-            <img src='src/assets/casa.jpg' className='w-[330px] max-w-[700px] md:w-[37rem] rounded-full  ' alt="" />
+            <img src={assets.casa_1} className='w-[330px] max-w-[700px] md:w-[37rem] rounded-full  ' alt="" />
 
             <div className='flex flex-col items-start md:items-start mt-10 text-gray-600'>
 
