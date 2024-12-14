@@ -7,9 +7,9 @@ const About = () => {
 
     <div className='container flex flex-col items-center justify-center mx-auto p-14 md:px-20 lg:px-[100px] w-full overflow-hidden ' id='About'>
 
-        <h1 className='text-2xl sm:text-4xl font-bold mb-2'>About  <span className='underline underline-offset-4 decoration-1 under font-light'>Our Brand</span>  </h1>  
+        <h1 className='text-2xl sm:text-4xl font-bold mb-2'>Sobre  <span className='underline underline-offset-4 decoration-1 under font-light'>Ricardo Santos</span>  </h1>  
        
-        <p className='text-gray-500 max-w-80 text-center mb-8'>Passionate about Properties, dedicated to your vision</p>
+        <p className='text-gray-500 max-w-80 text-center mb-8 py-3'>A sua confiança, o meu compromisso.</p>
 
         <div className='flex flex-col xl:flex-row items-center md:items-start md:gap-20 '>
 
@@ -20,22 +20,22 @@ const About = () => {
                 <div className='grid grid-cols-2 gap-6 md:gap-10 w-full 2xl:pr-28'>
                     <div>
                         <p className='text-4xl font-medium text-gray-800  '>10+</p>
-                        <p>Years of Excellence</p>
+                        <p>Anos experiência</p>
                     </div>
 
                     <div>
-                        <p className='text-4xl font-medium text-gray-800  ' >12+</p>
-                        <p>Projects Completed</p>
+                        <p className='text-4xl font-medium text-gray-800  ' >30+</p>
+                        <p>Projectos em mãos</p>
                     </div>
 
                     <div>
-                        <p className='text-4xl font-medium text-gray-800  ' >20+</p>
+                        <p className='text-4xl font-medium text-gray-800  ' >250+</p>
                         <p>Imoveis Vendidos</p>
                     </div>
 
                     <div>
-                        <p className='text-4xl font-medium text-gray-800  ' >25+</p>
-                        <p>Projectos em mãos</p>
+                        <p className='text-4xl font-medium text-gray-800  ' >4+</p>
+                        <p>Consultor do ano</p>
                     </div>
                 </div>
 
