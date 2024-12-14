@@ -17,6 +17,17 @@ import profile_img_1 from './profile_img_1.png'
 import profile_img_2 from './profile_img_2.png'
 import profile_img_3 from './profile_img_3.png'
 import casa_1 from './casa_1.jpg'
+import casa from './casa.jpg'
+import casa_2 from './casa_2jpg.jpg'
+import casa_3 from './casa_3.jpg'
+import casa_4 from './casa_4.webp'
+import casa_5 from './casa_5.webp'
+import casa_6 from './casa_6.jpg'
+import casa_7 from './casa_7.avif'
+import casa_8 from './casa_8.webp'
+import casa_9 from './casa_9.jpg'
+
+
 
 
 export const assets = {
@@ -34,6 +45,18 @@ export const assets = {
     left_arrow,
     right_arrow,
     casa_1,
+    casa,
+    casa_3,
+    casa_4,
+    casa_5,
+    casa_6,
+    casa_7,
+    casa_8,
+    casa_9,
+    casa_2,
+
+
+
 
 }
 

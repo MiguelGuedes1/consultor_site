@@ -35,7 +35,7 @@ const Projects = () => {
 
         <div className="relative h-auto w-full">
           <img
-            src="src/assets/casa.jpg"
+            src={assets.casa}
             alt="image 1"
             className="h-auto w-full object-cover"
           />
@@ -49,7 +49,7 @@ const Projects = () => {
 
        <div className="relative h-auto w-full">
           <img
-            src="src/assets/casa_2jpg.jpg"
+            src={assets.casa_2}
             alt="image 1"
             className="h-auto w-full object-cover"
           />
@@ -63,7 +63,7 @@ const Projects = () => {
 
         <div className="relative h-auto w-full">
           <img
-            src="src/assets/casa_3.jpg"
+          src={assets.casa_3}
             alt="image 1"
             className="h-auto w-full object-cover"
           />
@@ -77,7 +77,7 @@ const Projects = () => {
 
         <div className="relative h-auto w-full">
           <img
-            src="src/assets/casa_4.webp"
+           src={assets.casa_4}
             alt="image 1"
             className="h-auto w-full object-cover"
           />
@@ -91,7 +91,7 @@ const Projects = () => {
 
         <div className="relative h-auto w-full">
           <img
-            src="src/assets/casa_5.webp"
+           src={assets.casa_5}
             alt="image 1"
             className="h-auto w-full object-cover"
           />
@@ -105,7 +105,7 @@ const Projects = () => {
 
         <div className="relative h-auto w-full">
           <img
-            src="src/assets/casa_6.jpg"
+           src={assets.casa_6}
             alt="image 1"
             className="h-auto w-full object-cover"
           />
@@ -120,7 +120,7 @@ const Projects = () => {
 
         <div className="relative h-auto w-full">
           <img
-            src="src/assets/casa_7.avif"
+          src={assets.casa_7}
             alt="image 1"
             className="h-auto w-full object-cover"
           />
@@ -135,7 +135,7 @@ const Projects = () => {
 
         <div className="relative h-auto w-full">
           <img
-            src="src/assets/casa_8.webp"
+      src={assets.casa_8}
             alt="image 1"
             className="h-auto w-full object-cover"
           />
@@ -150,7 +150,7 @@ const Projects = () => {
 
         <div className="relative h-auto w-full">
           <img
-            src="src/assets/casa_9.jpg"
+        src={assets.casa_9}
             alt="image 1"
             className="h-auto w-full object-cover"
           />
@@ -165,7 +165,7 @@ const Projects = () => {
 
         <div className="relative h-auto w-full">
           <img
-            src="src/assets/casa_10.JPG"
+      src={assets.casa_4}
             alt="image 1"
             className="h-auto w-full object-cover"
           />

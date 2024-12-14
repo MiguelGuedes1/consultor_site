@@ -12,7 +12,7 @@ const Header = () => {
 
       <div className="container text-center mx-auto py-4 px-4 md:px-20 lg:px-32 text-white">
         <h2 className="text-5xl sm:text-6xl md:text-[82px] inline-block max-w-3xl font-semibold pt-20 ">
-          A criar pontes entre pessoas e os seus lugares ideaisqqq
+          A criar pontes entre pessoas e os seus lugares ideais
         </h2>
 
         <div className="flex justify-center items-center mt-16 gap-5 md:px-20 lg:px-32 ">
