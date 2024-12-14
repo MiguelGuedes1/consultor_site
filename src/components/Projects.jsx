@@ -54,7 +54,7 @@ const Projects = () => {
             className="h-auto w-full object-cover"
           />
           <div className="absolute bottom-4 left-4 bg-black/30 text-white px-4 py-2 rounded-lg flex flex-col gap-2">
-            <span className="text-sm md:text-base"> Localização : Arcozelo </span>
+            <span className="text-sm md:text-base"> Localização : Oliveira do Douro </span>
             <span className="text-sm md:text-base"> Preço : 250.000€ </span>
           </div>
         </div>
