@@ -6,6 +6,7 @@ import About from './components/About'
 import Projects from './components/Projects'
 import Testemunhos from './components/Testemunhos'
 import Contacto from './components/Contacto'
+import Footer from './components/Footer'
 
 
 const App = () => {
@@ -22,6 +23,7 @@ const App = () => {
       <Projects/>
       <Testemunhos/>
       <Contacto/>
+      <Footer/>
 
 
     </div>

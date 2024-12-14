@@ -31,6 +31,7 @@ import avatar_2 from './avatar_2.jpg'
 import avatar_3 from './avatar_3.avif'
 import avatar_4 from './avatar_4.jpg'
 import avatar_5 from './avatar_5.jpg'
+import www from './www.jpg'
 
 
 
@@ -68,6 +69,7 @@ export const assets = {
     avatar_3,
     avatar_4,
     avatar_5,
+   www
 
 
 }
