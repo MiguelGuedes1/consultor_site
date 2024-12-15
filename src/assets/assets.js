@@ -32,6 +32,8 @@ import avatar_3 from './avatar_3.avif'
 import avatar_4 from './avatar_4.jpg'
 import avatar_5 from './avatar_5.jpg'
 import logo_invictus_semfundo_1 from './logo_invictus_semfundo_1.png'
+import logo_oficial from './logo_oficial.png'
+
 
 
 
@@ -69,7 +71,8 @@ export const assets = {
     avatar_3,
     avatar_4,
     avatar_5,
-    logo_invictus_semfundo_1
+    logo_invictus_semfundo_1,
+    logo_oficial
 
 
 }

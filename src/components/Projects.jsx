@@ -24,7 +24,7 @@ const Projects = () => {
       </p>
 
       <Carousel
-        className="rounded-xl"
+        className="rounded-xl "
         navigation={({ setActiveIndex, activeIndex, length }) => (
           <div className="absolute top-4 left-2/4 z-50 flex -translate-x-2/4 gap-2">
             {new Array(length).fill("").map((_, i) => (
@@ -44,7 +44,7 @@ const Projects = () => {
         <motion.div
         animate={{ opacity: 1 }} // Define o destino da opacidade (visível)
         initial={{ opacity: 0 }} // Define a opacidade inicial (invisível)
-        transition={{ duration: 3, delay: 1, ease: "linear" }} // Define a duração, atraso e suavidade
+        transition={{ duration: 1.8, delay: 1, ease: "linear" }} // Define a duração, atraso e suavidade
         
         
         className="relative h-[500px] w-full md:w-full md:h-full">

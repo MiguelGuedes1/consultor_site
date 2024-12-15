@@ -25,11 +25,16 @@ const NavBar = () => {
     <div className='absolute top-0 left-0 w-full z-0'>
 
       <div className='container mx-auto flex justify-between items-center py-4 px-4 lg:px-32 bg-transparent'>
-        <motion.img
-          animate={{ y: 0 }} // Define o destino do movimento
-          initial={{ y: -100 }} // Define a posição inicial (fora da tela, vindo de cima)
-          transition={{ duration: 0.5, ease: "linear" }} // Define a duração e o tipo de transição
-        src={assets.logo} alt="logo" />
+
+        <motion.h3
+         animate={{ y: 0 }} // Define o destino do movimento
+         initial={{ y: -100 }} // Define a posição inicial (fora da tela, vindo de cima)
+         transition={{ duration: 0.5, ease: "linear" }} // Define a duração e o tipo de transição
+        
+        className='text-white text-[20px] '>Ricardo | Invictus </motion.h3>
+       
+
+
           <ul className="hidden md:flex gap-12 text-white">
             <motion.li
             
@@ -44,12 +49,14 @@ const NavBar = () => {
               >
                 Home
               </a>
+
+              
             </motion.li>
 
             <motion.li
-             animate={{ y: 0 }} // Define o destino do movimento
-             initial={{ y: -100 }} // Define a posição inicial (fora da tela, vindo de cima)
-             transition={{ duration: 0.8, ease: "linear" }} // Define a duração e o tipo de transição
+             animate={{ y: 0 }} 
+             initial={{ y: -100 }} 
+             transition={{ duration: 0.8, ease: "linear" }} 
             
             >
             <a
@@ -61,9 +68,9 @@ const NavBar = () => {
             </motion.li>
 
             <motion.li
-             animate={{ y: 0 }} // Define o destino do movimento
-             initial={{ y: -100 }} // Define a posição inicial (fora da tela, vindo de cima)
-             transition={{ duration: 1.1, ease: "linear" }} // Define a duração e o tipo de transição
+             animate={{ y: 0 }} 
+             initial={{ y: -100 }} 
+             transition={{ duration: 1.1, ease: "linear" }} 
             
             >
             <a
@@ -131,6 +138,30 @@ const NavBar = () => {
               <a onClick={() => setShowMobileMenu(false)} className='px-4 py-2 rounded-full inline-block' href="#About">About</a>
               <a onClick={() => setShowMobileMenu(false)} className='px-4 py-2 rounded-full inline-block' href="#Projects">Projects</a>
               <a onClick={() => setShowMobileMenu(false)} className='px-4 py-2 rounded-full inline-block' href="#Testemunhos">Testemunhos</a>
+
+              <div className='flex mt-10 gap-3'>
+
+              <div>
+                  <a href="#" className="relative inline-block transition-all duration-300 ease-in-out transform hover:scale-125 hover:shadow-xl hover:translate-y-[-4px]">
+                      <Instagram className="text-black w-6 h-6" />
+                  </a>
+              </div>
+
+              <div>
+                  <a href="#" className="relative inline-block transition-all duration-300 ease-in-out transform hover:scale-125 hover:shadow-xl hover:translate-y-[-4px]">
+                      <Facebook className="text-black w-6 h-6" />
+                  </a>
+              </div>
+              <div>
+                  <a href="#" className="relative inline-block transition-all duration-300 ease-in-out transform hover:scale-125 hover:shadow-xl hover:translate-y-[-4px]">
+                      <Linkedin className="text-black w-6 h-6" />
+                  </a>
+              </div>
+
+              </div>
+
+   
+              
             </ul>
         </div>
 

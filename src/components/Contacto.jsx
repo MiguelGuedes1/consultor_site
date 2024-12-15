@@ -36,7 +36,10 @@ const Contacto = () => {
 
   return (
 
-    <section className="bg-white dark:bg-gray-900">
+    <motion.section
+    
+    
+    className="bg-white dark:bg-gray-900">
 
       <div className="py-8 lg:py-16 px-4 mx-auto max-w-screen-md">
 
@@ -111,7 +114,7 @@ const Contacto = () => {
         </form>
 
       </div>
-    </section>
+    </motion.section>
   );
 };
 

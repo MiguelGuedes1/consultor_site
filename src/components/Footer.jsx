@@ -6,16 +6,16 @@ const Footer = () => {
 
     const LINKS = [
         {
-          title: "Product",
-          items: ["Overview", "Features", "Solutions", "Tutorials"],
+          title: "Departamentos",
+          items: ["Contabilidade", "Remodelação", "Financeiro", "Marketing"],
         },
         {
-          title: "Company",
-          items: ["About us", "Careers", "Press", "News"],
+          title: "Invictus",
+          items: ["Sobre", "Carreiras", "Press", "Novidades"],
         },
         {
-          title: "Resource",
-          items: ["Blog", "Newsletter", "Events", "Help center"],
+          title: "Parceiros",
+          items: ["Blog", "Newsletter", "Eventos", "Help center"],
         },
       ];
        
