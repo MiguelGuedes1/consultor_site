@@ -1,11 +1,19 @@
 import React from 'react';
 import { Carousel } from "@material-tailwind/react";
 import {assets} from "../assets/assets"
+import { motion } from "motion/react"
 
 
 const Projects = () => {
   return (
-    <div id='Projects' className='container mx-auto py-4 pt-20 px-6 md:px-20 lg:px-32 my-20 w-full overflow-hidden'>
+    <motion.div
+    
+    initial={{opacity:0,x:-200}}
+    transition={{duration:1.5}}
+    whileInView={{opacity:1,x:0}}
+    viewport={{once:true}}
+
+    id='Projects' className='container mx-auto py-4 pt-20 px-6 md:px-20 lg:px-32 my-20 w-full overflow-hidden'>
       <h1 className='text-2xl sm:text-4xl font-bold mb-2 text-center'>Imóveis <span className='underline underline-offset-4 decoration-1 under font-light'>Vendidos</span></h1>
       <p className='text-gray-500 text-center mb-8 mt-3 mx-auto py-7'>
 
@@ -33,17 +41,23 @@ const Projects = () => {
       >
         {/* Slide 1 */}
 
-        <div className="relative h-auto w-full">
+        <motion.div
+        animate={{ opacity: 1 }} // Define o destino da opacidade (visível)
+        initial={{ opacity: 0 }} // Define a opacidade inicial (invisível)
+        transition={{ duration: 3, delay: 1, ease: "linear" }} // Define a duração, atraso e suavidade
+        
+        
+        className="relative h-[500px] w-full md:w-full md:h-full">
           <img
             src={assets.casa}
             alt="image 1"
-            className="h-auto w-full object-cover"
+            className="relative h-[500px] w-full md:w-full md:h-full object-cover"
           />
           <div className="absolute bottom-4 left-4 bg-black/30 text-white px-4 py-2 rounded-lg flex flex-col gap-2">
             <span className="text-sm md:text-base"> Localização : Boavista </span>
             <span className="text-sm md:text-base"> Preço : 550.000€ </span>
           </div>
-        </div>
+        </motion.div>
 
        {/* Slide 2 */}
 
@@ -51,7 +65,7 @@ const Projects = () => {
           <img
             src={assets.casa_2}
             alt="image 1"
-            className="h-auto w-full object-cover"
+             className="relative h-[500px] w-full md:w-full md:h-full object-cover"
           />
           <div className="absolute bottom-4 left-4 bg-black/30 text-white px-4 py-2 rounded-lg flex flex-col gap-2">
             <span className="text-sm md:text-base"> Localização : Oliveira do Douro </span>
@@ -65,7 +79,7 @@ const Projects = () => {
           <img
           src={assets.casa_3}
             alt="image 1"
-            className="h-auto w-full object-cover"
+              className="relative h-[500px] w-full md:w-full md:h-full object-cover"
           />
           <div className="absolute bottom-4 left-4 bg-black/30 text-white px-4 py-2 rounded-lg flex flex-col gap-2">
             <span className="text-sm md:text-base"> Localização : Madalena </span>
@@ -79,7 +93,7 @@ const Projects = () => {
           <img
            src={assets.casa_4}
             alt="image 1"
-            className="h-auto w-full object-cover"
+            className="relative h-[500px] w-full md:w-full md:h-full object-cover"
           />
           <div className="absolute bottom-4 left-4 bg-black/30 text-white px-4 py-2 rounded-lg flex flex-col gap-2">
             <span className="text-sm md:text-base"> Localização : Foz </span>
@@ -93,7 +107,7 @@ const Projects = () => {
           <img
            src={assets.casa_5}
             alt="image 1"
-            className="h-auto w-full object-cover"
+                  className="relative h-[500px] w-full md:w-full md:h-full object-cover"
           />
           <div className="absolute bottom-4 left-4 bg-black/30 text-white px-4 py-2 rounded-lg flex flex-col gap-2">
             <span className="text-sm md:text-base"> Localização : Canidelo </span>
@@ -107,7 +121,7 @@ const Projects = () => {
           <img
            src={assets.casa_6}
             alt="image 1"
-            className="h-auto w-full object-cover"
+                  className="relative h-[500px] w-full md:w-full md:h-full object-cover"
           />
           <div className="absolute bottom-4 left-4 bg-black/30 text-white px-4 py-2 rounded-lg flex flex-col gap-2">
             <span className="text-sm md:text-base"> Localização : Porto </span>
@@ -122,7 +136,7 @@ const Projects = () => {
           <img
           src={assets.casa_7}
             alt="image 1"
-            className="h-auto w-full object-cover"
+                       className="relative h-[500px] w-full md:w-full md:h-full object-cover"
           />
           <div className="absolute bottom-4 left-4 bg-black/30 text-white px-4 py-2 rounded-lg flex flex-col gap-2">
             <span className="text-sm md:text-base"> Localização : Espinho </span>
@@ -137,7 +151,7 @@ const Projects = () => {
           <img
       src={assets.casa_8}
             alt="image 1"
-            className="h-auto w-full object-cover"
+                         className="relative h-[500px] w-full md:w-full md:h-full object-cover"
           />
           <div className="absolute bottom-4 left-4 bg-black/30 text-white px-4 py-2 rounded-lg flex flex-col gap-2">
             <span className="text-sm md:text-base"> Localização : Serzedo </span>
@@ -152,7 +166,7 @@ const Projects = () => {
           <img
         src={assets.casa_9}
             alt="image 1"
-            className="h-auto w-full object-cover"
+                     className="relative h-[500px] w-full md:w-full md:h-full object-cover"
           />
           <div className="absolute bottom-4 left-4 bg-black/30 text-white px-4 py-2 rounded-lg flex flex-col gap-2">
             <span className="text-sm md:text-base"> Localização : Avintes </span>
@@ -167,17 +181,17 @@ const Projects = () => {
           <img
       src={assets.casa_4}
             alt="image 1"
-            className="h-auto w-full object-cover"
+                      className="relative h-[500px] w-full md:w-full md:h-full object-cover"
           />
           <div className="absolute bottom-4 left-4 bg-black/30 text-white px-4 py-2 rounded-lg flex flex-col gap-2">
             <span className="text-sm md:text-base"> Localização : Boavista </span>
-            <span className="text-sm md:text-base"> Preço : 150.000€ </span>
+            <span className="text-sm md:text-base"> Preço : 550.600€ </span>
           </div>
         </div>
 
 
       </Carousel>
-    </div>
+    </motion.div>
   );
 };
 

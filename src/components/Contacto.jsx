@@ -1,6 +1,38 @@
-import React from 'react';
+import React, { useState } from 'react';
+import { motion } from "motion/react"
+
 
 const Contacto = () => {
+
+  const [result, setResult] = useState("");
+  const [mensagemEnviada,setMensagemEnviada] = useState(false)
+
+  const onSubmit = async (event) => {
+    event.preventDefault();
+    setResult("Sending....");
+    const formData = new FormData(event.target);
+
+    formData.append("access_key", "3f572f15-9fa6-4a9c-a762-e61a8ad4482d");
+
+    const response = await fetch("https://api.web3forms.com/submit", {
+      method: "POST",
+      body: formData
+    });
+
+    const data = await response.json();
+
+    if (data.success) {
+      setResult("Form Submitted Successfully");
+      event.target.reset();
+      setMensagemEnviada(true)
+    } else {
+      console.log("Error", data);
+      setResult(data.message);
+      setMensagemEnviada(false)
+    }
+  };
+
+
 
   return (
 
@@ -16,7 +48,8 @@ const Contacto = () => {
           Tem alguma dúvida ou deseja saber mais sobre os nossos imóveis? Envie-nos uma mensagem e vamos ajudá-lo a encontrar a casa dos seus sonhos. Estamos prontos para fazer negócios consigo!
         </p>
 
-        <form action="#" className="space-y-8">
+        <form action="#" className="space-y-8" onSubmit={onSubmit}>
+
           <div>
             <label 
               htmlFor="email" 
@@ -26,11 +59,13 @@ const Contacto = () => {
             <input 
               type="email" 
               id="email" 
+                name="email"
               className="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light" 
               placeholder="exemplo@dominio.com" 
               required 
             />
           </div>
+
           <div>
             <label 
               htmlFor="subject" 
@@ -40,11 +75,13 @@ const Contacto = () => {
             <input 
               type="text" 
               id="subject" 
+              name="subject"
               className="block p-3 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 shadow-sm focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light" 
               placeholder="Conte-nos como podemos ajudar" 
               required 
             />
           </div>
+
           <div className="sm:col-span-2">
             <label 
               htmlFor="message" 
@@ -52,16 +89,23 @@ const Contacto = () => {
               A sua mensagem
             </label>
             <textarea 
+               name="message"
               id="message" 
               rows="6" 
               className="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg shadow-sm border border-gray-300 focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" 
               placeholder="Deixe-nos a sua mensagem...">
             </textarea>
           </div>
-          <button 
-            type="submit" 
-            className="py-3 px-5 text-sm font-medium text-center text-white rounded-lg bg-blue-400 sm:w-fit bg-blue-600focus:ring-4 focus:outline-none focus:ring-cyan-300 dark:bg-cyan-700 dark:hover:bg-cyan-800 dark:focus:ring-cyan-900">
-            Enviar mensagem
+
+          <button
+            type="submit"
+            className={`py-3 px-5 text-sm font-medium text-center text-white rounded-lg sm:w-fit focus:ring-4 focus:outline-none ${
+              mensagemEnviada
+                ? "bg-green-500 hover:bg-green-600 focus:ring-green-300"
+                : "bg-blue-400 hover:bg-blue-600 focus:ring-blue-300"
+            }`}
+          >
+            {mensagemEnviada ? "Mensagem enviada com sucesso!" : "Enviar mensagem"}
           </button>
 
         </form>

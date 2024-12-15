@@ -2,6 +2,7 @@ import React from 'react'
 import { assets } from "../assets/assets"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faStar } from '@fortawesome/free-solid-svg-icons';
+import { motion } from "framer-motion";
 
 
 
@@ -67,7 +68,14 @@ const Testemunhos = () => {
     
 
     return (
-        <section className='p-14 '>
+        <motion.section 
+        initial={{ opacity: 0, x: 200 }}
+        transition={{ duration: 1.5 }}
+        whileInView={{ opacity: 1, x: 0 }}
+        viewport={{ once: true }}
+        
+        
+        id='Testemunhos' className='p-14 '>
             <div className='container mx-auto text-center '>
      
                 <div className='flex items-center justify-center flex-col mb-10'>
@@ -95,7 +103,7 @@ const Testemunhos = () => {
                     </div>
                 </div>
             </div>
-        </section>
+        </motion.section>
     )
 }
 

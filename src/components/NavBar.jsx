@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import {assets} from "../assets/assets"
 import { Instagram,Facebook,Linkedin } from 'lucide-react'
+import { motion } from "motion/react"
 
 const NavBar = () => {
 
@@ -24,40 +25,68 @@ const NavBar = () => {
     <div className='absolute top-0 left-0 w-full z-0'>
 
       <div className='container mx-auto flex justify-between items-center py-4 px-4 lg:px-32 bg-transparent'>
-        <img src={assets.logo} alt="logo" />
+        <motion.img
+          animate={{ y: 0 }} // Define o destino do movimento
+          initial={{ y: -100 }} // Define a posição inicial (fora da tela, vindo de cima)
+          transition={{ duration: 0.5, ease: "linear" }} // Define a duração e o tipo de transição
+        src={assets.logo} alt="logo" />
           <ul className="hidden md:flex gap-12 text-white">
-            <li>
-              <a
+            <motion.li
+            
+            animate={{ y: 0 }} // Define o destino do movimento
+            initial={{ y: -100 }} // Define a posição inicial (fora da tela, vindo de cima)
+            transition={{ duration: 0.5, ease: "linear" }} // Define a duração e o tipo de transição
+          >
+            
+             <a
                 href="#Header"
                 className="relative cursor-pointer text-[18px] text-white transition-all duration-300 before:content-[''] before:absolute before:bottom-0 before:left-0 before:w-0 before:h-[2px] before:bg-white before:transition-all before:duration-300 hover:text-white hover:before:w-full"
               >
                 Home
               </a>
-            </li>
-            <li>
+            </motion.li>
+
+            <motion.li
+             animate={{ y: 0 }} // Define o destino do movimento
+             initial={{ y: -100 }} // Define a posição inicial (fora da tela, vindo de cima)
+             transition={{ duration: 0.8, ease: "linear" }} // Define a duração e o tipo de transição
+            
+            >
             <a
                 href="#About"
                 className="relative cursor-pointer text-[18px] text-white transition-all duration-300 before:content-[''] before:absolute before:bottom-0 before:left-0 before:w-0 before:h-[2px] before:bg-white before:transition-all before:duration-300 hover:text-white hover:before:w-full"
               >
                 Sobre
               </a>
-            </li>
-            <li>
+            </motion.li>
+
+            <motion.li
+             animate={{ y: 0 }} // Define o destino do movimento
+             initial={{ y: -100 }} // Define a posição inicial (fora da tela, vindo de cima)
+             transition={{ duration: 1.1, ease: "linear" }} // Define a duração e o tipo de transição
+            
+            >
             <a
-                href="#Header"
+                href="#Projects"
                 className="relative cursor-pointer text-[18px] text-white transition-all duration-300 before:content-[''] before:absolute before:bottom-0 before:left-0 before:w-0 before:h-[2px] before:bg-white before:transition-all before:duration-300 hover:text-white hover:before:w-full"
               >
                 Vendas
               </a>
-            </li>
-            <li>
+            </motion.li>
+
+            <motion.li
+             animate={{ y: 0 }} // Define o destino do movimento
+             initial={{ y: -100 }} // Define a posição inicial (fora da tela, vindo de cima)
+             transition={{ duration: 1.3, ease: "linear" }} // Define a duração e o tipo de transição
+            
+            >
             <a
-                href="#Header"
+                href="#Testemunhos"
                 className="relative cursor-pointer text-[18px] text-white transition-all duration-300 before:content-[''] before:absolute before:bottom-0 before:left-0 before:w-0 before:h-[2px] before:bg-white before:transition-all before:duration-300 hover:text-white hover:before:w-full"
               >
                 Testemunhos
               </a>
-            </li>
+            </motion.li>
           </ul>
 
 
@@ -101,7 +130,7 @@ const NavBar = () => {
               <a onClick={() => setShowMobileMenu(false)} className='px-4 py-2 rounded-full inline-block' href="#Header">Home</a>
               <a onClick={() => setShowMobileMenu(false)} className='px-4 py-2 rounded-full inline-block' href="#About">About</a>
               <a onClick={() => setShowMobileMenu(false)} className='px-4 py-2 rounded-full inline-block' href="#Projects">Projects</a>
-              <a onClick={() => setShowMobileMenu(false)} className='px-4 py-2 rounded-full inline-block' href="#Testimonails">Testemunhos</a>
+              <a onClick={() => setShowMobileMenu(false)} className='px-4 py-2 rounded-full inline-block' href="#Testemunhos">Testemunhos</a>
             </ul>
         </div>
 

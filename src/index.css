@@ -10,3 +10,7 @@
 *{
     font-family: "Outfit";
 }
+
+html {
+    scroll-behavior: smooth;
+}
