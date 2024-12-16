@@ -91,7 +91,7 @@ const NavBar = () => {
                 href="#Testemunhos"
                 className="relative cursor-pointer text-[18px] text-white transition-all duration-300 before:content-[''] before:absolute before:bottom-0 before:left-0 before:w-0 before:h-[2px] before:bg-white before:transition-all before:duration-300 hover:text-white hover:before:w-full"
               >
-                Testemunhos
+                Opiniões
               </a>
             </motion.li>
           </ul>
@@ -135,9 +135,9 @@ const NavBar = () => {
 
             <ul className='flex flex-col items-center gap-2 mt-5 px-5 text-lg font-medium'>
               <a onClick={() => setShowMobileMenu(false)} className='px-4 py-2 rounded-full inline-block' href="#Header">Home</a>
-              <a onClick={() => setShowMobileMenu(false)} className='px-4 py-2 rounded-full inline-block' href="#About">About</a>
-              <a onClick={() => setShowMobileMenu(false)} className='px-4 py-2 rounded-full inline-block' href="#Projects">Projects</a>
-              <a onClick={() => setShowMobileMenu(false)} className='px-4 py-2 rounded-full inline-block' href="#Testemunhos">Testemunhos</a>
+              <a onClick={() => setShowMobileMenu(false)} className='px-4 py-2 rounded-full inline-block' href="#About">Sobre</a>
+              <a onClick={() => setShowMobileMenu(false)} className='px-4 py-2 rounded-full inline-block' href="#Projects">Vendas</a>
+              <a onClick={() => setShowMobileMenu(false)} className='px-4 py-2 rounded-full inline-block' href="#Testemunhos">Opiniões</a>
 
               <div className='flex mt-10 gap-3'>
 
