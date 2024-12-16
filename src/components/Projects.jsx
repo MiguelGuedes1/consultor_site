@@ -42,9 +42,9 @@ const Projects = () => {
         {/* Slide 1 */}
 
         <motion.div
-        animate={{ opacity: 1 }} // Define o destino da opacidade (visível)
-        initial={{ opacity: 0 }} // Define a opacidade inicial (invisível)
-        transition={{ duration: 1.8, delay: 1, ease: "linear" }} // Define a duração, atraso e suavidade
+        animate={{ opacity: 1 }} 
+        initial={{ opacity: 0 }} 
+        transition={{ duration: 1.8, delay: 1, ease: "linear" }} 
         
         
         className="relative h-[500px] w-full md:w-full md:h-full">

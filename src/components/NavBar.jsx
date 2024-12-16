@@ -27,9 +27,9 @@ const NavBar = () => {
       <div className='container mx-auto flex justify-between items-center py-4 px-4 lg:px-32 bg-transparent'>
 
         <motion.h3
-         animate={{ y: 0 }} // Define o destino do movimento
-         initial={{ y: -100 }} // Define a posição inicial (fora da tela, vindo de cima)
-         transition={{ duration: 0.5, ease: "linear" }} // Define a duração e o tipo de transição
+         animate={{ y: 0 }} 
+         initial={{ y: -100 }} 
+         transition={{ duration: 0.5, ease: "linear" }} 
         
         className='text-white text-[20px] '>Ricardo | Invictus </motion.h3>
        
@@ -38,9 +38,9 @@ const NavBar = () => {
           <ul className="hidden md:flex gap-12 text-white">
             <motion.li
             
-            animate={{ y: 0 }} // Define o destino do movimento
-            initial={{ y: -100 }} // Define a posição inicial (fora da tela, vindo de cima)
-            transition={{ duration: 0.5, ease: "linear" }} // Define a duração e o tipo de transição
+            animate={{ y: 0 }} 
+            initial={{ y: -100 }} 
+            transition={{ duration: 0.5, ease: "linear" }} 
           >
             
              <a
@@ -82,9 +82,9 @@ const NavBar = () => {
             </motion.li>
 
             <motion.li
-             animate={{ y: 0 }} // Define o destino do movimento
-             initial={{ y: -100 }} // Define a posição inicial (fora da tela, vindo de cima)
-             transition={{ duration: 1.3, ease: "linear" }} // Define a duração e o tipo de transição
+             animate={{ y: 0 }}
+             initial={{ y: -100 }} 
+             transition={{ duration: 1.3, ease: "linear" }}
             
             >
             <a
